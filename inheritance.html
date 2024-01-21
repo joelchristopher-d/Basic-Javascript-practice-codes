@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <script>
+        class a1{
+            constructor(){
+                this.a="joe"
+            }
+        }
+        class a2 extends a1{
+            constructor(b){
+                super()
+                this.b=1
+            }
+        }
+        var ob=new a2(1)
+        document.writeln(ob.b)
+    </script>
+
+
+<script>
+    class Joe extends Date{
+        constructor(){
+            super()
+        }
+    }
+    var m=new Joe()
+    document.write(m.getTime())
+</script>
+</body>
+</html>

@@ -1,0 +1,65 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <script>
+        class joel{
+            constructor(name){
+                this.name=name
+                this.no=10
+            }
+        }
+        var joe=new joel("joel")
+        document.write(joe.name,joe.no)
+    </script>
+<br><br>
+
+
+<script>
+    function abc(a,b,c){
+        this.a=a
+        this.b=b
+        this.c=c
+    }
+    dab=new abc(1,2,3)
+    dab.d=4
+    document.write(dab.a,dab.d)
+</script><br><br><br><br>
+<script>
+    function b1(a,b){
+        this.a=a
+        this.b=b
+    }
+    ob=new b1(1,2)
+    ob.c=function(){
+        return this.a
+    }
+    document.write(ob.c())
+</script><br><br>
+<script>
+     function b1(a,b){
+        this.a=a
+        this.b=b
+    }
+    b1.prototype.c=3
+    obj=new b1(1,2)
+    document.write(obj.c)
+</script><br><br>
+<script>
+     function b1(a,b){
+        this.a=a
+        this.b=b
+        this.c=function(a){
+            this.a=a
+        }}
+        ob1=new b1(1,2)
+        ob1.c(400)
+        document.write(ob1.a)
+</script>
+</body>
+</html>

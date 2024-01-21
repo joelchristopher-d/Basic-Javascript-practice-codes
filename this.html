@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <script>
+        const per ={
+            f_name:"joel",
+            l_name:"chris",
+            full_name: function(){
+                return this.f_name + " " + this.l_name;
+            }
+        }
+        // var a=per
+        document.write(per.full_name())
+    </script>
+    
+
+    <h1>JavaScript Function bind()</h1>
+
+<p>This example creates 2 objects (person and member).</p>
+<p>The member object borrows the fullname method from person:</p> 
+
+<p id="demo"></p>
+
+<script>
+    
+const person = {
+  firstName:"John",
+  lastName: "Doe",
+  fullName: function(city) {
+    return this.firstName + " " + this.lastName + city;
+  }
+}
+
+const member = {
+  firstName:"Hege",
+  lastName: "Nilsen",
+}
+
+let fullNam = person.fullName.bind(member,"kadayam");
+document.write(person.fullName())
+document.getElementById("demo").innerHTML = fullNam();
+document.write(person.fullName.call(member,"kadayam"))
+document.write(person.fullName.apply(member,["kadayam"]))
+document.write(Math.max(1,4,6))
+document.write(Math.max.apply(Math,[15,15,19,20]))
+</script>
+</body>
+</html>

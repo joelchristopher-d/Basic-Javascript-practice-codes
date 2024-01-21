@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <button id="btn" >clickme</button>
+    <h1 id="a"></h1>
+    <script>
+        document.getElementById("btn").addEventListener("click",fun) 
+        function fun(){
+            document.getElementById("a").innerHTML="hello joe"
+            btn.style.background="red"
+        }
+    </script>
+    <button id="bt">dontclickme</button>
+    <h2 id="b"></h2>
+    <script>
+        function fun1(){
+            bt.style.width="100px"
+            bt.style.height="100px"
+            bt.style.background="green"
+            bt.style.color="red"
+        }
+        function fun2(){
+            bt.style.width=""
+            bt.style.height=""
+            bt.style.background=""
+            bt.style.color=""
+
+        }
+        function fun3(){
+            document.getElementById("b").innerHTML="messsiiii"
+        }
+        var mybtn=document.getElementById("bt")
+        mybtn.addEventListener("mouseover",fun1)
+        mybtn.addEventListener("mouseout",fun2)
+        mybtn.addEventListener("click",fun3)
+    </script>
+    <input type="password">
+</body>
+</html>

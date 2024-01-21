@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <script>
+        function valid(){
+        var a=document.getElementById("text").value
+        var reg= /^[6-9][0-9]{9}$/
+        var b=reg.test(a)
+        document.write(b)
+        if(reg.test(a)){
+            document.write("valid phn num")
+        }
+        else{
+            document.write("invalid")
+        }}
+    </script>
+    <form action="">
+        <input type="text" name="" id="text">
+        <button onclick="valid()">submit</button>
+    </form><br><br>
+    
+</body>
+</html>

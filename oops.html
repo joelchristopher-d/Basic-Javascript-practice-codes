@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <script>
+        class bike{
+            constructor(x,y){
+                this.x=x
+                this.y=y
+            }
+            model(){
+                this.a=10
+                this.b=20
+            }
+            add(){
+                c=a+b
+                document.write(c)
+            }
+            static met(){
+                var d=10
+                var c=d+5
+                // document.write(this.x+this.y)
+                // console.log(c)
+
+            } 
+        }
+        var a= new bike(1000,1)
+        bike.met()
+        a.model()
+        a.add()
+
+
+    </script>
+</body>
+</html>

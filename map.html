@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <script>
+        // function d(c){
+        //     return c*10
+        // }
+        // var a=new Array(1,2,3,4,4,5)
+        // var ss=a.map(d)
+        // document.writeln(ss)
+        
+        b=new Array(2,3,4,5,6)
+        var ab=b.map(function(val,num){
+            return{key:num,value:val}
+        })
+        console.log(ab)
+
+    </script><br><br>
+    <script>
+        var name="joel"
+        var a1=Array.prototype.map.call(name,function(a2){
+            return a2
+        })
+        document.write(a1)
+    </script><br>
+    <script>
+        var name1=new Array("j","o","e","l")
+        var n=name1.map(function(i){
+            return i
+        })
+        document.write(n)
+    </script>
+</body>
+</html>

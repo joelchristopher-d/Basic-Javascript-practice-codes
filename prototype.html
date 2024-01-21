@@ -1,0 +1,28 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <script>
+        class aruvi{
+            constructor(name,edu){
+                this.name=name
+                this.edu=edu
+            }
+            add(){
+                document.write(this.course)
+            }
+        }
+        aruvi.prototype.course="python"
+        var a1=new aruvi('joel','be')
+        var a2=new aruvi('sillly','be')
+        a2.add()
+        document.write(a1.name,a1.edu,a1.course)
+        document.write(a2.name,a2.edu,a2.course)
+    </script>
+</body>
+</html>

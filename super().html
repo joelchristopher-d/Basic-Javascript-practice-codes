@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <script>
+        class Bike{
+            constructor(){
+                this.honda="shine"
+            }
+            sub(){
+                this.v='joe'
+            }
+        }
+        class Bike1 extends Bike{
+            // super.sub
+            constructor(name,price){
+                super()
+                this.name='hero'
+                this.price=100000
+            }
+            add(){
+                // super()
+
+            }
+        }
+        var v=new Bike1
+        document.writeln(v.honda)
+    </script>
+
+
+    <script>
+        function bike(company){
+            this.company=company
+        }
+        bike.prototype.getcompany=function(){
+            return this.company
+        }
+        function vehicle(name,price){
+            this.name=name
+            this.price=price
+        }
+        var bi=new bike("abcd")
+        vehicle.prototype=bi
+        var vehi=new vehicle("joel",100)
+        document.write(vehi.getcompany()+" "+vehi.name+vehi.price)
+    </script>
+</body>
+</html>

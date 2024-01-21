@@ -1,0 +1,67 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <script>
+        t="hii"
+        document.write(t,"<br>")
+        x=t.length
+        document.write(x)
+        a="\"haha\""
+        document.write(a)
+        y="abcdef"
+        p=y.slice(2,5)
+        document.write(p)
+        document.write(y.substring(2))
+        tt="joe chris joe"
+        pp=tt.replace("joe","joel")
+        document.write(pp,"<br>")
+        aa=tt.replaceAll("joe","joel")
+        document.write(aa)
+        j="joel"
+        u=j.toUpperCase()
+        l=j.toLowerCase()
+        document.write(u,l,"<br>")
+        a1="joel"
+        a2="christopher"
+        a3=a1.concat("$",a2)
+        document.write(a3,"<br>")
+        t1="     joe    chris"
+        document.write(t1.length)
+        tt2=t1.trim()
+        document.write(t1.trim())
+        document.write(tt2.length,"<br>")
+        j1="7"
+        document.write(j1.padStart(2,0))
+        document.write(j1.padEnd(6,0),"<br>")
+        ab="Breaking Bad"
+        document.write(ab.charAt(2))
+        document.write(ab.charCodeAt(0))
+        spli="a$v$G"
+        document.write(spli.split("$"),"<br>")
+        je="joe chris sach"
+        document.write(je.indexOf("sach"),"<br>")
+        h="hello world"
+        document.write(h.startsWith("h"))
+        document.write(h.startsWith("o",4))
+        document.write(h.endsWith("d"))
+        act="vj rajini kamal ak arunvj"
+        document.write(act.includes("vj"))
+        document.write(act.match("vj"))
+        document.write(act.match(/vj/g))
+        xx=[a,b,c,d,e,f]
+        for( i in xx){
+            document.write(xx[i])
+        }
+
+
+        
+
+    </script>
+</body>
+</html>
